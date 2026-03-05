@@ -62,6 +62,7 @@ html+=`
 <td>${d.id}</td>
 <td>${d.nama}</td>
 <td>${d.alamat}</td>
+<td>${d.hasil}</td>
 <td>${d.keterangan}</td>
 
 <td>
@@ -88,6 +89,7 @@ fetch(API+
 "?action=add"+
 "&nama="+nama+
 "&alamat="+alamat+
+"&hasil="+hasil+
 "&keterangan="+ket)
 
 .then(()=>load())
