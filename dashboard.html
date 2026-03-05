@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Database</h2>
+
+<button onclick="logout()">Logout</button>
+
+<h3>Tambah Data</h3>
+
+<input id="nama" placeholder="Nama">
+<input id="alamat" placeholder="Alamat">
+<input id="ket" placeholder="Keterangan">
+
+<button onclick="add()">Simpan</button>
+
+<hr>
+
+<input id="search" placeholder="Cari..." onkeyup="search()">
+
+<table border="1">
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Nama</th>
+<th>Alamat</th>
+<th>Keterangan</th>
+<th>Aksi</th>
+</tr>
+
+</thead>
+
+<tbody id="data"></tbody>
+
+</table>
+
+<script src="app.js"></script>
+
+</body>
+</html>
